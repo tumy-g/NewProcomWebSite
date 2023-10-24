@@ -6,14 +6,14 @@
             </h1>
             <nav class="nav_menu">
                 <ul class="inner">
-                    <li><a href="/" class=""><i class="in">HOME</i></a></li>
-                    <li><a href="/" class=""><i class="in">INTRODUCE</i></a></li>
-                    <li><a href="/" class=""><i class="in">NOTES</i></a></li>
-                    <li><a href="/" class=""><i class="in">PROJECT</i></a></li>
-                    <li><a href="/" class=""><i class="in">STUDY</i></a></li>
+                    <li><a href="/"><i class="in">HOME</i></a></li>
+                    <li><a href="/"><i class="in">INTRODUCE</i></a></li>
+                    <li><a href="/"><i class="in">NOTES</i></a></li>
+                    <li><a href="/"><i class="in">PROJECT</i></a></li>
+                    <li><a href="/"><i class="in">STUDY</i></a></li>
                 </ul>
             </nav>
-            <p><a href="/"><img src="../assets/logo_kosen.png" alt=""></a></p>
+            <p><a href="/"><img src="../assets/logo_kosen.png" alt="MaizuruCollege"></a></p>
         </div>
     </header>
 </template>

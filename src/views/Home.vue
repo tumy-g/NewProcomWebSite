@@ -26,7 +26,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 #home{
-  background-color: #444;
   height: 100vh;
 }
 </style>

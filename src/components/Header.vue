@@ -1,16 +1,14 @@
 <template>
     <header id="header">
         <div class="inner">
-            <h1 class="logo">
-                <a href="/"><img src="../assets/logo_white.png" alt="ProcomLogo"></a>
-            </h1>
             <nav class="nav_menu">
                 <ul class="inner">
-                    <li><a href="/"><i class="in">HOME</i></a></li>
-                    <li><a href="/"><i class="in">INTRODUCE</i></a></li>
-                    <li><a href="/"><i class="in">NOTES</i></a></li>
-                    <li><a href="/"><i class="in">PROJECT</i></a></li>
-                    <li><a href="/"><i class="in">STUDY</i></a></li>
+                    <li @mouseover="HoverMou(1)" @mouseleave="LeleaceMou(1)"><a href="/"><i class="in">{{ home }}</i></a></li>
+                    <li @mouseover="HoverMou(2)" @mouseleave="LeleaceMou(2)"><a href="/"><i class="in">{{ intro }}</i></a></li>
+                    <li @mouseover="HoverMou(3)" @mouseleave="LeleaceMou(3)"><a href="/"><i class="in">{{ notes }}</i></a></li>
+                    <li @mouseover="HoverMou(4)" @mouseleave="LeleaceMou(4)"><a href="/"><i class="in">{{ project }}</i></a></li>
+                    <li @mouseover="HoverMou(5)" @mouseleave="LeleaceMou(5)"><a href="/"><i class="in">{{ study }}</i></a></li>
+                    <li @mouseover="HoverMou(6)" @mouseleave="LeleaceMou(6)"><a href="/"><i class="in">{{ game }}</i></a></li>
                 </ul>
             </nav>
             <p><a href="/"><img src="../assets/logo_kosen.png" alt="MaizuruCollege"></a></p>
@@ -19,15 +17,72 @@
 </template>
   
 <script lang="ts">
-  
-  export default {
+import Vue from 'vue';
+
+export default Vue.extend({
     data(){
-  
+        return {
+            home: "HOME",
+            intro: "INTRODUCE",
+            notes: "NOTES",
+            project: "PROJECT",
+            study: "STUDY",
+            game: "GAME",
+        }
     },
     methods : {
-  
+        HoverMou(no:number){
+            switch (no) {
+                case 1:
+                    this.home = "ホーム";
+                    break;
+                case 2:
+                    this.intro = "部活紹介";
+                    break;
+                case 3:
+                    this.notes = "部員ノート";
+                    break;
+                case 4:
+                    this.project = "プロジェクト";
+                    break;
+                case 5:
+                    this.study = "お勉強";
+                    break;
+                case 6:
+                    this.game = "ゲーム";
+                    break;
+            
+                default:
+                    break;
+            }
+        },
+        LeleaceMou(no:number){
+            switch (no) {
+                case 1:
+                    this.home = "HOME";
+                    break;
+                case 2:
+                    this.intro = "INTRODUCE";
+                    break;
+                case 3:
+                    this.notes = "NOTES";
+                    break;
+                case 4:
+                    this.project = "PROJECT";
+                    break;
+                case 5:
+                    this.study = "STUDY";
+                    break;
+                case 6:
+                    this.game = "GAME";
+                    break;
+            
+                default:
+                    break;
+            }
+        }
     }
-  }
+})
   
 </script>
 <style lang="scss" scoped>
@@ -50,7 +105,7 @@ template{
   line-height: 1.8;
 }
 #header{
-  height: 7rem;
+  height: 6rem;
   width: 100vw;
   margin: 0 auto;
   border-bottom: 1px solid #aaa;
@@ -58,31 +113,16 @@ template{
   background-color: #222;
   .inner{
     width: 100%;
-    height: 7rem;
+    height: 6rem;
     margin: 0 auto;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: justify;
-    .logo{
-      margin: 0;
-      height: 7rem;
-      width: 20%;
-      a{
-        height: 7rem;
-        display: block;
-        img{
-            height: 100%;
-            object-fit: cover;
-        }
-        &:hover{
-            background-color: #444;
-        }
-      }
-    }
     nav{
       display: block;
-      width: 60%;
+      width: 80%;
+      margin: 0 auto;
       .inner{
         display: flex;
         -webkit-box-align: center;
@@ -91,8 +131,8 @@ template{
           border-left: 1px solid #aaa;
         }
         li{
-            width: 20%;
-            height: 7rem;
+            width: 16.66%;
+            height: 6rem;
             display: block;
             border-right: 1px solid #aaa;
             font-size: 1.1rem;
@@ -100,10 +140,10 @@ template{
                 background-color: #555;
             }
             &:hover a{
-                color: #333;
+                color: #ffce00;
             }
             a{
-                height: 7rem;
+                height: 6rem;
                 font-size: inherit;
                 line-height: 1;
                 text-decoration: none;
@@ -121,7 +161,7 @@ template{
       }
     }
     p{
-        height: 7rem;
+        height: 6rem;
         width: 20%;
         position: relative;
         padding: 0 2rem;
@@ -134,7 +174,7 @@ template{
             display: block;
             padding: 0 1.3rem;
             img{
-                height: 7rem;
+                height: 6rem;
                 object-fit: cover;
             }
         }

@@ -10,11 +10,11 @@ const routes = [
     name: "home",
     component: Home
   },
-  // {
-  //   path: "/getdata",
-  //   name: "getdata",
-  //   component: () => import("../views/GetData.vue")
-  // }
+  {
+    path: "/a",
+    name: "test",
+    component: () => import("../views/TestAnimation.vue")
+  }
 ];
 
 const router = new VueRouter({

@@ -10,12 +10,9 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@aws-amplify/ui-components": "^1.9.40",
-    "aws-amplify": "^5.3.10",
-    "axios": "^1.4.0",
-    "chart.js": "^2.9.4",
     "core-js": "^3.1.2",
     "cors": "^2.8.5",
+    "swiper-vue2": "^1.0.10",
     "vue": "^2.6.12",
     "vue-chartjs": "^3.5.1",
     "vue-class-component": "^7.0.2",

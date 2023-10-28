@@ -1,7 +1,8 @@
 <template>
   <div id="home">
     <Header></Header>
-    <MainVisual></MainVisual>
+    <!-- <MainVisual></MainVisual> -->
+    <MainSections></MainSections>
   </div>
 </template>
 
@@ -9,6 +10,7 @@
 import { Component, Vue } from "vue-property-decorator";
 import Header from "@/components/Header.vue";
 import MainVisual from "@/components/MainVisual.vue";
+import MainSections from "@/components/MainSections.vue";
 
 export default {
   data(){
@@ -16,7 +18,8 @@ export default {
   },
   components: {
     Header,
-    MainVisual
+    MainVisual,
+    MainSections,
   },
   methods : {
 

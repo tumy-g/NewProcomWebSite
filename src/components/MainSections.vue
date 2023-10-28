@@ -172,7 +172,6 @@ time{
             }
         }
         .button-more{
-
             text-align: center!important;
             .btn{
                 width: 100%;

@@ -21,19 +21,19 @@
                         <img v-show="slide3" src="../assets/slide/slide3.png" alt="">
                     </div>
                     <div class="image">
-                        <img v-show="slide1" src="../assets/slide/slide1.png" alt="">
-                        <img v-show="slide2" src="../assets/slide/slide2.png" alt="">
-                        <img v-show="slide3" src="../assets/slide/slide3.png" alt="">
+                        <img v-show="slide1" src="../assets/slide/slide4.png" alt="">
+                        <img v-show="slide2" src="../assets/slide/slide5.png" alt="">
+                        <img v-show="slide3" src="../assets/slide/slide6.png" alt="">
                     </div>
                     <div class="image">
-                        <img v-show="slide1" src="../assets/slide/slide1.png" alt="">
-                        <img v-show="slide2" src="../assets/slide/slide2.png" alt="">
-                        <img v-show="slide3" src="../assets/slide/slide3.png" alt="">
+                        <img v-show="slide1" src="../assets/slide/slide7.png" alt="">
+                        <img v-show="slide2" src="../assets/slide/slide8.png" alt="">
+                        <img v-show="slide3" src="../assets/slide/slide9.png" alt="">
                     </div>
                     <div class="image">
-                        <img v-show="slide1" src="../assets/slide/slide1.png" alt="">
-                        <img v-show="slide2" src="../assets/slide/slide2.png" alt="">
-                        <img v-show="slide3" src="../assets/slide/slide3.png" alt="">
+                        <img v-show="slide1" src="../assets/slide/slide10.png" alt="">
+                        <img v-show="slide2" src="../assets/slide/slide11.png" alt="">
+                        <img v-show="slide3" src="../assets/slide/slide12.png" alt="">
                     </div>
                 </div>
             </div>
@@ -139,6 +139,7 @@ div{
     z-index:-1;
     height: 60rem;
     overflow-x: hidden;
+    max-height: 100vh;
 }
 .bg2 {
   animation-direction:alternate-reverse;
@@ -151,7 +152,6 @@ div{
 .main-visual{
     position: relative;
     z-index: 2;
-    margin-bottom: 3.33rem;
     overflow: hidden;
     .inner{
         max-width: 1600px;
@@ -175,11 +175,11 @@ div{
                     padding: 2%;
                     object-fit: cover;
                     opacity: 0.9;
-                    &:hover{
-                        padding: 0;
-                        height: 100%;
-                        width: 100%;
-                    }
+                    // &:hover{
+                    //     padding: 0;
+                    //     height: 100%;
+                    //     width: 100%;
+                    // }
                 }
             }
         }
@@ -191,9 +191,9 @@ div{
             justify-content: center;
             align-items: center;
             font-size: 3.8rem;
-            &:hover{
-                font-size: 4rem;
-            }
+            // &:hover{
+            //     font-size: 4rem;
+            // }
             h2{
                 line-height: 2;
                 font-weight: 800;

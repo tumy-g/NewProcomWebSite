@@ -1,8 +1,9 @@
 <template>
   <div id="home">
     <Header></Header>
-    <!-- <MainVisual></MainVisual> -->
+    <MainVisual></MainVisual>
     <MainSections></MainSections>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -11,6 +12,7 @@ import { Component, Vue } from "vue-property-decorator";
 import Header from "@/components/Header.vue";
 import MainVisual from "@/components/MainVisual.vue";
 import MainSections from "@/components/MainSections.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   data(){
@@ -20,6 +22,7 @@ export default {
     Header,
     MainVisual,
     MainSections,
+    Footer
   },
   methods : {
 

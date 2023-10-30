@@ -3,12 +3,12 @@
         <div class="inner">
             <nav class="nav_menu">
                 <ul class="inner">
-                    <li @mouseover="HoverMou(1)" @mouseleave="LeleaceMou(1)"><a href="/"><i class="in">{{ home }}</i></a></li>
-                    <li @mouseover="HoverMou(2)" @mouseleave="LeleaceMou(2)"><a href="/"><i class="in">{{ intro }}</i></a></li>
-                    <li @mouseover="HoverMou(3)" @mouseleave="LeleaceMou(3)"><a href="/"><i class="in">{{ notes }}</i></a></li>
-                    <li @mouseover="HoverMou(4)" @mouseleave="LeleaceMou(4)"><a href="/"><i class="in">{{ project }}</i></a></li>
-                    <li @mouseover="HoverMou(5)" @mouseleave="LeleaceMou(5)"><a href="/"><i class="in">{{ study }}</i></a></li>
-                    <li @mouseover="HoverMou(6)" @mouseleave="LeleaceMou(6)"><a href="/"><i class="in">{{ game }}</i></a></li>
+                    <li @mouseover="HoverMou(1)" @mouseleave="LeleaceMou(1)"><a href="/" class="btn" to="/"><i class="in">{{ home }}</i></a></li>
+                    <li @mouseover="HoverMou(2)" @mouseleave="LeleaceMou(2)"><router-link class="btn" to="/introduce"><i class="in">{{ intro }}</i></router-link></li>
+                    <li @mouseover="HoverMou(4)" @mouseleave="LeleaceMou(4)"><router-link class="btn" to="/home"><i class="in">{{ project }}</i></router-link></li>
+                    <li @mouseover="HoverMou(3)" @mouseleave="LeleaceMou(3)"><router-link class="btn" to="/a"><i class="in">{{ notes }}</i></router-link></li>
+                    <li @mouseover="HoverMou(5)" @mouseleave="LeleaceMou(5)"><router-link class="btn" to="/"><i class="in">{{ study }}</i></router-link></li>
+                    <li @mouseover="HoverMou(6)" @mouseleave="LeleaceMou(6)"><router-link class="btn" to="/"><i class="in">{{ game }}</i></router-link></li>
                 </ul>
             </nav>
             <p><a href="/"><img src="../assets/logo_kosen.png" alt="MaizuruCollege"></a></p>
@@ -139,10 +139,10 @@ template{
             &:hover{
                 background-color: #555;
             }
-            &:hover a{
+            &:hover .btn{
                 color: #ffce00;
             }
-            a{
+            .btn{
                 height: 6rem;
                 font-size: inherit;
                 line-height: 1;

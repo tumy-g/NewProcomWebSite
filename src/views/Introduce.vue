@@ -1,11 +1,17 @@
 <template>
     <div>
-        hogehoge
+        <Header></Header>
+        <Intro1></Intro1>
+        <Footer></Footer>
     </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
+import Intro1 from '@/components/Intro1.vue';
+
 export default Vue.extend({
     data(){
         return {
@@ -14,6 +20,11 @@ export default Vue.extend({
     },
     mounted(){
 
+    },
+    components: {
+        Header,
+        Intro1,
+        Footer
     },
     methods: {
 

@@ -232,6 +232,7 @@ div{
                     object-fit: cover;
                     border: 0;
                     border-radius: 6px;
+                    border:1px solid #555;
                 }
             }
         }

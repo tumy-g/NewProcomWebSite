@@ -150,7 +150,6 @@ div{
   animation-duration:5s;
 }
 .main-visual{
-    position: relative;
     z-index: 2;
     overflow: hidden;
     .inner{
@@ -158,7 +157,6 @@ div{
         width: 80%;
         padding: 4.44rem 2.22rem;
         margin: 0 auto;
-        position: relative;
         display: flex;
         justify-content: space-between;
         .logo{
@@ -232,7 +230,7 @@ div{
                     object-fit: cover;
                     border: 0;
                     border-radius: 6px;
-                    border:1px solid #555;
+                    border:1px solid #ccc;
                 }
             }
         }

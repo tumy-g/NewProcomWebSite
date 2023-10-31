@@ -1,7 +1,7 @@
 <template>
     <div>
         <Header></Header>
-        <Intro1></Intro1>
+        <Project1></Project1>
         <Footer></Footer>
     </div>
 </template>
@@ -10,12 +10,11 @@
 import Vue from 'vue';
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import Intro1 from '@/components/Intro1.vue';
+import Project1 from '@/components/Project1.vue';
 
 export default Vue.extend({
     data(){
         return {
-
         };
     },
     mounted(){
@@ -23,7 +22,7 @@ export default Vue.extend({
     },
     components: {
         Header,
-        Intro1,
+        Project1,
         Footer
     },
     methods: {

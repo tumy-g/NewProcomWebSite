@@ -1,7 +1,7 @@
 <template>
     <div>
         <Header></Header>
-        <Intro1></Intro1>
+        <Study1></Study1>
         <Footer></Footer>
     </div>
 </template>
@@ -10,7 +10,7 @@
 import Vue from 'vue';
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import Intro1 from '@/components/Intro1.vue';
+import Study1 from '@/components/Study1.vue';
 
 export default Vue.extend({
     data(){
@@ -23,7 +23,7 @@ export default Vue.extend({
     },
     components: {
         Header,
-        Intro1,
+        Study1,
         Footer
     },
     methods: {

@@ -5,9 +5,9 @@
                 <ul class="inner">
                     <li @mouseover="HoverMou(1)" @mouseleave="LeleaceMou(1)"><a href="/" class="btn" to="/"><i class="in">{{ home }}</i></a></li>
                     <li @mouseover="HoverMou(2)" @mouseleave="LeleaceMou(2)"><router-link class="btn" to="/introduce"><i class="in">{{ intro }}</i></router-link></li>
-                    <li @mouseover="HoverMou(4)" @mouseleave="LeleaceMou(4)"><router-link class="btn" to="/home"><i class="in">{{ project }}</i></router-link></li>
+                    <li @mouseover="HoverMou(4)" @mouseleave="LeleaceMou(4)"><router-link class="btn" to="/projects"><i class="in">{{ project }}</i></router-link></li>
+                    <li @mouseover="HoverMou(5)" @mouseleave="LeleaceMou(5)"><router-link class="btn" to="/study"><i class="in">{{ study }}</i></router-link></li>
                     <li @mouseover="HoverMou(3)" @mouseleave="LeleaceMou(3)"><router-link class="btn" to="/a"><i class="in">{{ notes }}</i></router-link></li>
-                    <li @mouseover="HoverMou(5)" @mouseleave="LeleaceMou(5)"><router-link class="btn" to="/"><i class="in">{{ study }}</i></router-link></li>
                     <li @mouseover="HoverMou(6)" @mouseleave="LeleaceMou(6)"><router-link class="btn" to="/"><i class="in">{{ game }}</i></router-link></li>
                 </ul>
             </nav>
@@ -25,7 +25,7 @@ export default Vue.extend({
             home: "HOME",
             intro: "INTRODUCE",
             notes: "NOTES",
-            project: "PROJECT",
+            project: "PROJECTS",
             study: "STUDY",
             game: "GAME",
         }
@@ -46,7 +46,7 @@ export default Vue.extend({
                     this.project = "プロジェクト";
                     break;
                 case 5:
-                    this.study = "お勉強";
+                    this.study = "講習会";
                     break;
                 case 6:
                     this.game = "ゲーム";
@@ -111,6 +111,7 @@ template{
   border-bottom: 1px solid #aaa;
   display: block;
   background-color: #222;
+  z-index: 3;
   .inner{
     width: 100%;
     height: 6rem;

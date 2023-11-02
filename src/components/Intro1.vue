@@ -46,7 +46,7 @@
                                 <br>それから各部門に分かれて先輩達と共に学びながら新しい何かを創造していくことが目的です。
                             </p>
                         </div>
-                        <p class="button-more"><a href="#" class="btn">どんな講習会があるのか見る</a></p>
+                        <p class="button-more"><router-link to="study" class="btn">どんな講習会があるのか見る</router-link></p>
                     </div>
                 </section>
                 <section>

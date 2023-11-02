@@ -7,7 +7,7 @@
                     <li @mouseover="HoverMou(2)" @mouseleave="LeleaceMou(2)"><router-link class="btn" to="/introduce"><i class="in">{{ intro }}</i></router-link></li>
                     <li @mouseover="HoverMou(4)" @mouseleave="LeleaceMou(4)"><router-link class="btn" to="/projects"><i class="in">{{ project }}</i></router-link></li>
                     <li @mouseover="HoverMou(5)" @mouseleave="LeleaceMou(5)"><router-link class="btn" to="/study"><i class="in">{{ study }}</i></router-link></li>
-                    <li @mouseover="HoverMou(3)" @mouseleave="LeleaceMou(3)"><router-link class="btn" to="/a"><i class="in">{{ notes }}</i></router-link></li>
+                    <li @mouseover="HoverMou(3)" @mouseleave="LeleaceMou(3)"><router-link class="btn" to="/notes"><i class="in">{{ notes }}</i></router-link></li>
                     <li @mouseover="HoverMou(6)" @mouseleave="LeleaceMou(6)"><router-link class="btn" to="/"><i class="in">{{ game }}</i></router-link></li>
                 </ul>
             </nav>
